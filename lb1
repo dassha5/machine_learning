@@ -1,1 +1,127 @@
-https://colab.research.google.com/drive/1j2oq_But_s7gB3Xzaw7KQpWDoA0IRGr5#scrollTo=pNv0KRDqHhKL
+#Створіть одновимірний масив (вектор) з парними числами від 2 до 20 та виведіть його значення.
+import numpy as np
+numbers = np.arange(2, 21, 2)
+print(numbers)
+#Створіть двовимірний масив (матрицю) розміром 3x3, заповніть його випадковими дійсними числами від 0 до 1 та виведіть його значення.
+import numpy as np
+matrix = np.random.rand(3, 3)
+print(matrix)
+#Створіть масив розміром 3x3, заповніть його випадковими натуральними числами від 1 до 20 та виведіть його значення.
+import numpy as np
+random_matrix = np.random.randint(1, 21, size=(3, 3))
+print(random_matrix)
+#Створіть масив розміром 4x4, заповніть його випадковими дійсними числами в діапазоні від 0 до 1 та знайдіть мінімальний елемент.
+import numpy as np
+random_matrix_4x4 = np.random.rand(4, 4)
+min_element = np.min(random_matrix_4x4)
+print("Матриця 4x4:\n", random_matrix_4x4)
+print("Мінімальний елемент:", min_element)
+#Створіть два одновимірних масиви розміром 7, заповніть їх випадковими цілими числами в діапазоні
+# від 1 до 15 та виконайте на них поелементні операції додавання, віднімання та множення.
+import numpy as np
+array1 = np.random.randint(1, 16, size=7)
+array2 = np.random.randint(1, 16, size=7)
+addition_result = array1 + array2
+subtraction_result = array1 - array2
+multiplication_result = array1 * array2
+print("Перший масив:", array1)
+print("Другий масив:", array2)
+print("Результат додавання:", addition_result)
+print("Результат віднімання:", subtraction_result)
+print("Результат множення:", multiplication_result)
+#Створіть дві матриці 3x3, заповніть їх довільними цілими числами від 3 до 30 та знайдіть їх добуток.
+import numpy as np
+matrix1 = np.random.randint(3, 31, size=(3, 3))
+matrix2 = np.random.randint(3, 31, size=(3, 3))
+matrix_add = np.dot(matrix1, matrix2)
+print("Перша матриця:\n", matrix1)
+print("Друга матриця:\n", matrix2)
+print("Добуток матриць:\n", matrix_add)
+#Створіть дві матриці розміром 4x2 та 2x5, заповніть їх випадковими цілими числами в діапазоні від 1 до 7 та перемножте їх між собою.
+import numpy as np
+matrix1 = np.random.randint(1, 8, size=(4, 2))
+matrix2 = np.random.randint(1, 8, size=(2, 5))
+matrix_add = np.dot(matrix1, matrix2)
+print("Перша матриця (4x2):\n", matrix1)
+print("Друга матриця (2x5):\n", matrix2)
+print("Добуток матриць:\n", matrix_add)
+#Створіть матрицю розміром 2x2, заповніть її випадковими цілими числами в діапазоні від 1 до 8 та знайдіть її обернену матрицю.
+import numpy as np
+matrix = np.random.randint(1, 9, size=(2, 2))
+print("Оригінальна матриця:")
+print(matrix)
+if np.linalg.det(matrix) != 0:
+    inverse_matrix = np.linalg.inv(matrix)
+    print("Обернена матриця:")
+    print(inverse_matrix)
+else:
+    print("Матриця є сингулярною і не має оберненої.")
+#Створіть матрицю розміром 2x3, заповніть її випадковими дійсними числами в діапазоні від 0 до 1 та транспонуйте її.
+import numpy as np
+matrix = np.random.rand(2, 3)
+print("Оригінальна матриця:")
+print(matrix)
+transposed_matrix = matrix.T
+print("Транспонована матриця:")
+print(transposed_matrix)
+#Створіть матрицю розміром 3x4 та вектор розміром 4 x1, заповніть їх випадковими цілими числами в діапазоні від 1 до 10 та знайдіть добуток матриці на вектор.
+import numpy as np
+matrix = np.random.randint(1, 11, size=(3, 4))
+print("Матриця 3x4:")
+print(matrix)
+vector = np.random.randint(1, 11, size=(4, 1))
+print("Вектор 4x1:")
+print(vector)
+product = np.dot(matrix, vector)
+print("Добуток матриці на вектор:")
+print(product)
+#Створіть матрицю розміром 2x3 та вектор розміром 3x1, заповніть матрицю випадковими дійсними числами від 0 до 1,
+# а вектор - випадковими цілими числами в діапазоні від 1 до 10, і знайдіть добуток матриці на вектор.
+import numpy as np
+matrix = np.random.rand(2, 3)
+print("Матриця 2x3:")
+print(matrix)
+vector = np.random.randint(1, 11, size=(3, 1))
+print("Вектор 3x1:")
+print(vector)
+product = np.dot(matrix, vector)
+print("Добуток матриці на вектор:")
+print(product)
+#Створіть дві матриці розміром 4x4, заповніть їх випадковими цілими числами в діапазоні від 1 до 10 та знайдіть їхню суму.
+import numpy as np
+matrix1 = np.random.randint(1, 11, size=(4, 4))
+print("Перша матриця 4x4:")
+print(matrix1)
+matrix2 = np.random.randint(1, 11, size=(4, 4))
+print("Друга матриця 4x4:")
+print(matrix2)
+sum_matrix = matrix1 + matrix2
+print("Сума матриць:")
+print(sum_matrix)
+#Створіть дві матриці розміром 4x4, заповніть їх випадковими дійсними числами в діапазоні від -1 до 1 та знайдіть їх добуток.
+import numpy as np
+matrix1 = 2 * np.random.rand(4, 4) - 1
+print("Перша матриця 4x4:")
+print(matrix1)
+matrix2 = 2 * np.random.rand(4, 4) - 1
+print("Друга матриця 4x4:")
+print(matrix2)
+product_matrix = np.dot(matrix1, matrix2)
+print("Добуток матриць:")
+print(product_matrix)
+#Створіть матрицю розміром 3x3, заповніть її випадковими дійсними числами в діапазоні від -1 до 1 та знайдіть суму елементів матриці.
+import numpy as np
+matrix = 2 * np.random.rand(3, 3) - 1
+print("Матриця 3x3:")
+print(matrix)
+sum_elements = np.sum(matrix)
+print("Сума елементів матриці:")
+print(sum_elements)
+#Створіть матрицю розміром 5x5, заповніть її випадковими дійсними числами в діапазоні від -0.5 до 0.5 та знайдіть вектор-стовпчик, що містить суму елементів кожного рядка матриці.
+import numpy as np
+matrix = np.random.rand(5, 5) - 0.5
+print("Матриця 5x5:")
+print(matrix)
+sums = np.sum(matrix, axis=1)
+print("Вектор-стовпчик, що містить суму елементів кожного рядка:")
+print(sums)
